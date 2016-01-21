@@ -2,7 +2,8 @@
 using System;
 using System.Net;
 using System.Web;
-using EsccWebTeam.Data.Xml;
+using Escc.Net;
+
 namespace Escc.Search.Google
 {
     /// <summary>
@@ -57,9 +58,10 @@ namespace Escc.Search.Google
                 "&client=google-csbe&output=xml_no_dtd&ie=utf8&oe=utf8&hl=en";
 
             // Make a fresh request to Google for search results. Use gzip for speed.
-            var request = XmlHttpRequest.Create(new Uri(url));
+            var client = new HttpRequestClient(new ConfigurationProxyProvider());
+            var request = client.CreateRequest(new Uri(url));
             request.AutomaticDecompression = DecompressionMethods.GZip;
-            var response = new GoogleResponse(XmlHttpRequest.RequestXPath(request));
+            var response = new GoogleResponse(client.RequestXPath(request));
 
             // Cache the response if possible before returning it
             if (this.CacheStrategy != null)
