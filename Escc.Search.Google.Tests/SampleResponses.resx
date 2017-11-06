@@ -1,0 +1,808 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ExampleResponseAllFields" xml:space="preserve">
+    <value>{
+ "kind": "customsearch#search",
+ "url": {
+  "type": "application/json",
+  "template": "https://www.googleapis.com/customsearch/v1?q={searchTerms}&amp;num={count?}&amp;start={startIndex?}&amp;lr={language?}&amp;safe={safe?}&amp;cx={cx?}&amp;sort={sort?}&amp;filter={filter?}&amp;gl={gl?}&amp;cr={cr?}&amp;googlehost={googleHost?}&amp;c2coff={disableCnTwTranslation?}&amp;hq={hq?}&amp;hl={hl?}&amp;siteSearch={siteSearch?}&amp;siteSearchFilter={siteSearchFilter?}&amp;exactTerms={exactTerms?}&amp;excludeTerms={excludeTerms?}&amp;linkSite={linkSite?}&amp;orTerms={orTerms?}&amp;relatedSite={relatedSite?}&amp;dateRestrict={dateRestrict?}&amp;lowRange={lowRange?}&amp;highRange={highRange?}&amp;searchType={searchType}&amp;fileType={fileType?}&amp;rights={rights?}&amp;imgSize={imgSize?}&amp;imgType={imgType?}&amp;imgColorType={imgColorType?}&amp;imgDominantColor={imgDominantColor?}&amp;alt=json"
+ },
+ "queries": {
+  "request": [
+   {
+    "title": "Google Custom Search - videos",
+    "totalResults": "194",
+    "searchTerms": "videos",
+    "count": 10,
+    "startIndex": 1,
+    "inputEncoding": "utf8",
+    "outputEncoding": "utf8",
+    "safe": "off",
+    "cx": "013802616358587036066:ehvcftnmyfs"
+   }
+  ],
+  "nextPage": [
+   {
+    "title": "Google Custom Search - videos",
+    "totalResults": "194",
+    "searchTerms": "videos",
+    "count": 10,
+    "startIndex": 11,
+    "inputEncoding": "utf8",
+    "outputEncoding": "utf8",
+    "safe": "off",
+    "cx": "013802616358587036066:ehvcftnmyfs"
+   }
+  ]
+ },
+ "context": {
+  "title": "www.eastsussex.gov.uk"
+ },
+ "searchInformation": {
+  "searchTime": 0.606521,
+  "formattedSearchTime": "0.61",
+  "totalResults": "194",
+  "formattedTotalResults": "194"
+ },
+ "items": [
+  {
+   "kind": "customsearch#result",
+   "title": "Videos of council meetings – East Sussex County Council",
+   "htmlTitle": "\u003cb\u003eVideos\u003c/b\u003e of council meetings – East Sussex County Council",
+   "link": "https://www.eastsussex.gov.uk/yourcouncil/webcasts/",
+   "displayLink": "www.eastsussex.gov.uk",
+   "snippet": "Videos of council meetings. Webcasts of meetings are available online for six \nmonths after the date of the meeting. They include index points that allow you to ...",
+   "htmlSnippet": "\u003cb\u003eVideos\u003c/b\u003e of council meetings. Webcasts of meetings are available online for six \u003cbr\u003e\nmonths after the date of the meeting. They include index points that allow you to&amp;nbsp;...",
+   "cacheId": "Va_XLYBSaPcJ",
+   "formattedUrl": "https://www.eastsussex.gov.uk/yourcouncil/webcasts/",
+   "htmlFormattedUrl": "https://www.eastsussex.gov.uk/yourcouncil/webcasts/",
+   "pagemap": {
+    "cse_thumbnail": [
+     {
+      "width": "225",
+      "height": "225",
+      "src": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTamuKF29shsi2Ox-MCAJs84d2n-z-u2m9Qnvsa-cp_mBMeMh5xEGluwow"
+     }
+    ],
+    "metatags": [
+     {
+      "viewport": "width=device-width, initial-scale=1.0",
+      "dc.title": "Videos of council meetings – East Sussex County Council",
+      "og:title": "Videos of council meetings – East Sussex County Council",
+      "twitter:title": "Videos of council meetings – East Sussex County Council",
+      "dc.creator": "Web Team, East Sussex County Council, County Hall, Lewes, BN7 1UE. https://www.eastsussex.gov.uk/contact-us/",
+      "dcterms.created": "2015-06-24",
+      "dcterms.modified": "2017-10-10",
+      "egms.systemid": "9238",
+      "og:url": "https://www.eastsussex.gov.uk/yourcouncil/webcasts/",
+      "dc.publisher": "East Sussex County Council",
+      "dcterms.spatial": "East Sussex, UK",
+      "dc.language": "eng",
+      "dc.description": "Watch webcasts of Council meetings and interviews with Councillors &amp;ndash; either live or at a time to suit you, when you can jump to specific agenda items.",
+      "og:description": "Watch webcasts of Council meetings and interviews with Councillors &amp;ndash; either live or at a time to suit you, when you can jump to specific agenda items.",
+      "twitter:description": "Watch webcasts of Council meetings and interviews with Councillors &amp;ndash; either live or at a time to suit you, when you can jump to specific agenda items.",
+      "dc.subject": "Providing information",
+      "og:type": "article",
+      "dc.format": "text/html",
+      "egms.disposalreview": "2018-03-13",
+      "egms.copyright": "https://www.eastsussex.gov.uk/about-this-site/copyright/",
+      "msapplication-tileimage": "https://www.eastsussex.gov.uk/windows-tile.png",
+      "msapplication-tilecolor": "#ffffff",
+      "og:image": "https://www.eastsussex.gov.uk/img/logo-for-facebook.png",
+      "og:site_name": "East Sussex County Council",
+      "fb:app_id": "169406409819518",
+      "twitter:card": "summary",
+      "twitter:site": "@eastsussexcc"
+     }
+    ],
+    "cse_image": [
+     {
+      "src": "https://www.eastsussex.gov.uk/img/logo-for-facebook.png"
+     }
+    ]
+   }
+  },
+  {
+   "kind": "customsearch#result",
+   "title": "Recycling point, Cooperative car park, High Street, Heathfield – East ...",
+   "htmlTitle": "Recycling point, Cooperative car park, High Street, Heathfield – East ...",
+   "link": "https://www.eastsussex.gov.uk/environment/rubbishandrecycling/recyclingsites/coopheathfield",
+   "displayLink": "www.eastsussex.gov.uk",
+   "snippet": "Further information. CDs, DVDs, Videos, PC &amp; Video games (including their \ncases/sleeves) are accepted in the book bank.",
+   "htmlSnippet": "Further information. CDs, DVDs, \u003cb\u003eVideos\u003c/b\u003e, PC &amp;amp; \u003cb\u003eVideo\u003c/b\u003e games (including their \u003cbr\u003e\ncases/sleeves) are accepted in the book bank.",
+   "cacheId": "Wu1Jlz2vYOsJ",
+   "formattedUrl": "https://www.eastsussex.gov.uk/environment/.../coopheathfield",
+   "htmlFormattedUrl": "https://www.eastsussex.gov.uk/environment/.../coopheathfield",
+   "pagemap": {
+    "cse_thumbnail": [
+     {
+      "width": "225",
+      "height": "225",
+      "src": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTamuKF29shsi2Ox-MCAJs84d2n-z-u2m9Qnvsa-cp_mBMeMh5xEGluwow"
+     }
+    ],
+    "metatags": [
+     {
+      "viewport": "width=device-width, initial-scale=1.0",
+      "dc.title": "Recycling point, Cooperative car park, High Street, Heathfield – East Sussex County Council",
+      "og:title": "Recycling point, Cooperative car park, High Street, Heathfield – East Sussex County Council",
+      "twitter:title": "Recycling point, Cooperative car park, High Street, Heathfield – East Sussex County Council",
+      "dc.creator": "Web Team, East Sussex County Council, County Hall, Lewes, BN7 1UE. https://www.eastsussex.gov.uk/contact-us/",
+      "dcterms.created": "2015-04-29",
+      "dcterms.modified": "2017-10-23",
+      "egms.systemid": "4931",
+      "og:url": "https://www.eastsussex.gov.uk/environment/rubbishandrecycling/recyclingsites/coopheathfield/",
+      "dc.publisher": "East Sussex County Council",
+      "dcterms.spatial": "East Sussex, UK",
+      "dc.language": "eng",
+      "dc.description": "Details of the recycling point at Cooperative car park, High Street, Heathfield.",
+      "og:description": "Details of the recycling point at Cooperative car park, High Street, Heathfield.",
+      "twitter:description": "Details of the recycling point at Cooperative car park, High Street, Heathfield.",
+      "dc.subject": "Providing information",
+      "og:type": "article",
+      "dc.format": "text/html",
+      "egms.copyright": "https://www.eastsussex.gov.uk/about-this-site/copyright/",
+      "msapplication-tileimage": "https://www.eastsussex.gov.uk/windows-tile.png",
+      "msapplication-tilecolor": "#ffffff",
+      "og:image": "https://www.eastsussex.gov.uk/img/logo-for-facebook.png",
+      "og:site_name": "East Sussex County Council",
+      "fb:app_id": "169406409819518",
+      "twitter:card": "summary",
+      "twitter:site": "@eastsussexcc"
+     }
+    ],
+    "cse_image": [
+     {
+      "src": "https://www.eastsussex.gov.uk/img/logo-for-facebook.png"
+     }
+    ]
+   }
+  },
+  {
+   "kind": "customsearch#result",
+   "title": "Lewes Register Office – East Sussex County Council",
+   "htmlTitle": "Lewes Register Office – East Sussex County Council",
+   "link": "https://www.eastsussex.gov.uk/community/registration/offices/lewes/",
+   "displayLink": "www.eastsussex.gov.uk",
+   "snippet": "Contact details, opening hours and directions to Lewes Register Office.",
+   "htmlSnippet": "Contact details, opening hours and directions to Lewes Register Office.",
+   "cacheId": "pnGQik_8ghQJ",
+   "formattedUrl": "https://www.eastsussex.gov.uk/community/registration/offices/lewes/",
+   "htmlFormattedUrl": "https://www.eastsussex.gov.uk/community/registration/offices/lewes/",
+   "pagemap": {
+    "cse_thumbnail": [
+     {
+      "width": "225",
+      "height": "225",
+      "src": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTamuKF29shsi2Ox-MCAJs84d2n-z-u2m9Qnvsa-cp_mBMeMh5xEGluwow"
+     }
+    ],
+    "metatags": [
+     {
+      "viewport": "width=device-width, initial-scale=1.0",
+      "dc.title": "Lewes Register Office – East Sussex County Council",
+      "og:title": "Lewes Register Office – East Sussex County Council",
+      "twitter:title": "Lewes Register Office – East Sussex County Council",
+      "dc.creator": "Web Team, East Sussex County Council, County Hall, Lewes, BN7 1UE. https://www.eastsussex.gov.uk/contact-us/",
+      "dcterms.created": "2015-06-24",
+      "dcterms.modified": "2017-10-24",
+      "egms.systemid": "9511",
+      "og:url": "https://www.eastsussex.gov.uk/community/registration/offices/lewes/",
+      "dc.publisher": "East Sussex County Council",
+      "dcterms.spatial": "East Sussex, UK",
+      "dc.language": "eng",
+      "dc.description": "Contact details, opening hours and directions to Lewes Register Office.",
+      "og:description": "Contact details, opening hours and directions to Lewes Register Office.",
+      "twitter:description": "Contact details, opening hours and directions to Lewes Register Office.",
+      "dc.subject": "Providing information",
+      "og:type": "article",
+      "dc.format": "text/html",
+      "egms.disposalreview": "2018-04-19",
+      "egms.copyright": "https://www.eastsussex.gov.uk/about-this-site/copyright/",
+      "msapplication-tileimage": "https://www.eastsussex.gov.uk/windows-tile.png",
+      "msapplication-tilecolor": "#ffffff",
+      "og:image": "https://www.eastsussex.gov.uk/img/logo-for-facebook.png",
+      "og:site_name": "East Sussex County Council",
+      "fb:app_id": "169406409819518",
+      "twitter:card": "summary",
+      "twitter:site": "@eastsussexcc"
+     }
+    ],
+    "cse_image": [
+     {
+      "src": "https://www.eastsussex.gov.uk/img/logo-for-facebook.png"
+     }
+    ]
+   }
+  },
+  {
+   "kind": "customsearch#result",
+   "title": "The Big Gig – There's more to me than LD! – East Sussex County ...",
+   "htmlTitle": "The Big Gig – There&amp;#39;s more to me than LD! – East Sussex County ...",
+   "link": "https://www.eastsussex.gov.uk/socialcare/disability/learning-disability/learning-disability-partnership-board/involvement-matters-team/theres-more-to-me-than-ld/",
+   "displayLink": "www.eastsussex.gov.uk",
+   "snippet": "Members of the Involvement Matters Team (IMT) tell you who they are in these \nvideos. They do not want to be defined by their learning disability. The aim of the\n ...",
+   "htmlSnippet": "Members of the Involvement Matters Team (IMT) tell you who they are in these \u003cbr\u003e\n\u003cb\u003evideos\u003c/b\u003e. They do not want to be defined by their learning disability. The aim of the\u003cbr\u003e\n&amp;nbsp;...",
+   "cacheId": "A8GZt4W7t2IJ",
+   "formattedUrl": "https://www.eastsussex.gov.uk/.../theres-more-to-me-than-ld/",
+   "htmlFormattedUrl": "https://www.eastsussex.gov.uk/.../theres-more-to-me-than-ld/",
+   "pagemap": {
+    "cse_thumbnail": [
+     {
+      "width": "225",
+      "height": "225",
+      "src": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTamuKF29shsi2Ox-MCAJs84d2n-z-u2m9Qnvsa-cp_mBMeMh5xEGluwow"
+     }
+    ],
+    "metatags": [
+     {
+      "viewport": "width=device-width, initial-scale=1.0",
+      "dc.title": "The Big Gig – There’s more to me than LD! – East Sussex County Council",
+      "og:title": "The Big Gig – There’s more to me than LD! – East Sussex County Council",
+      "twitter:title": "The Big Gig – There’s more to me than LD! – East Sussex County Council",
+      "dc.creator": "Web Team, East Sussex County Council, County Hall, Lewes, BN7 1UE. https://www.eastsussex.gov.uk/contact-us/",
+      "dcterms.created": "2017-06-23",
+      "dcterms.modified": "2017-10-18",
+      "egms.systemid": "35372",
+      "og:url": "https://www.eastsussex.gov.uk/socialcare/disability/learning-disability/learning-disability-partnership-board/involvement-matters-team/theres-more-to-me-than-ld/",
+      "dc.publisher": "East Sussex County Council",
+      "dcterms.spatial": "East Sussex, UK",
+      "dc.language": "eng",
+      "dc.description": "“The Big Gig – There’s more to me than LD!” is an inclusive event for everyone, celebrating the good work with and for people with learning disabilities on Wednesday 25th October 2017.",
+      "og:description": "“The Big Gig – There’s more to me than LD!” is an inclusive event for everyone, celebrating the good work with and for people with learning disabilities on Wednesday 25th October 2017.",
+      "twitter:description": "“The Big Gig – There’s more to me than LD!” is an inclusive event for everyone, celebrating the good work with and for people with learning disabilities on Wednesday 25th October 2017.",
+      "dc.subject": "Providing information",
+      "og:type": "article",
+      "dc.format": "text/html",
+      "egms.disposalreview": "2017-11-15",
+      "egms.copyright": "https://www.eastsussex.gov.uk/about-this-site/copyright/",
+      "msapplication-tileimage": "https://www.eastsussex.gov.uk/windows-tile.png",
+      "msapplication-tilecolor": "#ffffff",
+      "og:image": "https://www.eastsussex.gov.uk/img/logo-for-facebook.png",
+      "og:site_name": "East Sussex County Council",
+      "fb:app_id": "169406409819518",
+      "twitter:card": "summary",
+      "twitter:site": "@eastsussexcc"
+     }
+    ],
+    "cse_image": [
+     {
+      "src": "https://www.eastsussex.gov.uk/img/logo-for-facebook.png"
+     }
+    ]
+   }
+  },
+  {
+   "kind": "customsearch#result",
+   "title": "Recycling point, Croft Road car park, Crowborough – East Sussex ...",
+   "htmlTitle": "Recycling point, Croft Road car park, Crowborough – East Sussex ...",
+   "link": "https://www.eastsussex.gov.uk/environment/rubbishandrecycling/recyclingsites/croftroadcarpark/",
+   "displayLink": "www.eastsussex.gov.uk",
+   "snippet": "CDs, DVDs, Videos, PC &amp; Video games (including their cases/sleeves) are \naccepted in the book bank. The electrical bank accepts small items such as irons,\n ...",
+   "htmlSnippet": "CDs, DVDs, \u003cb\u003eVideos\u003c/b\u003e, PC &amp;amp; \u003cb\u003eVideo\u003c/b\u003e games (including their cases/sleeves) are \u003cbr\u003e\naccepted in the book bank. The electrical bank accepts small items such as irons,\u003cbr\u003e\n&amp;nbsp;...",
+   "cacheId": "NzQvG_v5Gz0J",
+   "formattedUrl": "https://www.eastsussex.gov.uk/environment/.../croftroadcarpark/",
+   "htmlFormattedUrl": "https://www.eastsussex.gov.uk/environment/.../croftroadcarpark/",
+   "pagemap": {
+    "cse_thumbnail": [
+     {
+      "width": "225",
+      "height": "225",
+      "src": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTamuKF29shsi2Ox-MCAJs84d2n-z-u2m9Qnvsa-cp_mBMeMh5xEGluwow"
+     }
+    ],
+    "metatags": [
+     {
+      "viewport": "width=device-width, initial-scale=1.0",
+      "dc.title": "Recycling point, Croft Road car park, Crowborough – East Sussex County Council",
+      "og:title": "Recycling point, Croft Road car park, Crowborough – East Sussex County Council",
+      "twitter:title": "Recycling point, Croft Road car park, Crowborough – East Sussex County Council",
+      "dc.creator": "Web Team, East Sussex County Council, County Hall, Lewes, BN7 1UE. https://www.eastsussex.gov.uk/contact-us/",
+      "dcterms.created": "2015-04-29",
+      "dcterms.modified": "2017-10-23",
+      "egms.systemid": "4935",
+      "og:url": "https://www.eastsussex.gov.uk/environment/rubbishandrecycling/recyclingsites/croftroadcarpark/",
+      "dc.publisher": "East Sussex County Council",
+      "dcterms.spatial": "East Sussex, UK",
+      "dc.language": "eng",
+      "dc.description": "Details for the recycling point at Croft Road car park, Crowborough.",
+      "og:description": "Details for the recycling point at Croft Road car park, Crowborough.",
+      "twitter:description": "Details for the recycling point at Croft Road car park, Crowborough.",
+      "dc.subject": "Providing information",
+      "og:type": "article",
+      "dc.format": "text/html",
+      "egms.copyright": "https://www.eastsussex.gov.uk/about-this-site/copyright/",
+      "msapplication-tileimage": "https://www.eastsussex.gov.uk/windows-tile.png",
+      "msapplication-tilecolor": "#ffffff",
+      "og:image": "https://www.eastsussex.gov.uk/img/logo-for-facebook.png",
+      "og:site_name": "East Sussex County Council",
+      "fb:app_id": "169406409819518",
+      "twitter:card": "summary",
+      "twitter:site": "@eastsussexcc"
+     }
+    ],
+    "cse_image": [
+     {
+      "src": "https://www.eastsussex.gov.uk/img/logo-for-facebook.png"
+     }
+    ]
+   }
+  },
+  {
+   "kind": "customsearch#result",
+   "title": "East Sussex Better Together",
+   "htmlTitle": "East Sussex Better Together",
+   "link": "https://news.eastsussex.gov.uk/east-sussex-better-together/",
+   "displayLink": "news.eastsussex.gov.uk",
+   "snippet": "We've made some short videos explaining more about the ESBT Alliance (\naccountable care in East Sussex) – click on the links below to find out about our ...",
+   "htmlSnippet": "We&amp;#39;ve made some short \u003cb\u003evideos\u003c/b\u003e explaining more about the ESBT Alliance (\u003cbr\u003e\naccountable care in East Sussex) – click on the links below to find out about our&amp;nbsp;...",
+   "cacheId": "JTSiJlmwkQoJ",
+   "formattedUrl": "https://news.eastsussex.gov.uk/east-sussex-better-together/",
+   "htmlFormattedUrl": "https://news.eastsussex.gov.uk/east-sussex-better-together/",
+   "pagemap": {
+    "cse_thumbnail": [
+     {
+      "width": "136",
+      "height": "136",
+      "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaGuDQIXc5C58j8LeU_m7jhb8BW7JXPT-jgmZGhiTus6C3kZmJ6CbBkm2L"
+     }
+    ],
+    "metatags": [
+     {
+      "viewport": "width=device-width"
+     }
+    ],
+    "cse_image": [
+     {
+      "src": "https://news.eastsussex.gov.uk/wp-content/uploads/2015/05/esbt_logo.jpg"
+     }
+    ]
+   }
+  },
+  {
+   "kind": "customsearch#result",
+   "title": "Recycling point, Highlands Inn, Ridgewood, Uckfield – East Sussex ...",
+   "htmlTitle": "Recycling point, Highlands Inn, Ridgewood, Uckfield – East Sussex ...",
+   "link": "https://www.eastsussex.gov.uk/environment/rubbishandrecycling/recyclingsites/highlandsinnuckfield",
+   "displayLink": "www.eastsussex.gov.uk",
+   "snippet": "Further information. CDs, DVDs, Videos, Audio Tapes, Vinyl records (including \ntheir cases/sleeves) are accepted in the book bank.",
+   "htmlSnippet": "Further information. CDs, DVDs, \u003cb\u003eVideos\u003c/b\u003e, Audio Tapes, Vinyl records (including \u003cbr\u003e\ntheir cases/sleeves) are accepted in the book bank.",
+   "cacheId": "y7gXzxblyKIJ",
+   "formattedUrl": "https://www.eastsussex.gov.uk/environment/.../highlandsinnuckfield",
+   "htmlFormattedUrl": "https://www.eastsussex.gov.uk/environment/.../highlandsinnuckfield",
+   "pagemap": {
+    "cse_thumbnail": [
+     {
+      "width": "225",
+      "height": "225",
+      "src": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTamuKF29shsi2Ox-MCAJs84d2n-z-u2m9Qnvsa-cp_mBMeMh5xEGluwow"
+     }
+    ],
+    "metatags": [
+     {
+      "viewport": "width=device-width, initial-scale=1.0",
+      "dc.title": "Recycling point, Highlands Inn, Ridgewood, Uckfield – East Sussex County Council",
+      "og:title": "Recycling point, Highlands Inn, Ridgewood, Uckfield – East Sussex County Council",
+      "twitter:title": "Recycling point, Highlands Inn, Ridgewood, Uckfield – East Sussex County Council",
+      "dc.creator": "Web Team, East Sussex County Council, County Hall, Lewes, BN7 1UE. https://www.eastsussex.gov.uk/contact-us/",
+      "dcterms.created": "2015-05-06",
+      "dcterms.modified": "2017-10-23",
+      "egms.systemid": "5082",
+      "og:url": "https://www.eastsussex.gov.uk/environment/rubbishandrecycling/recyclingsites/highlandsinnuckfield/",
+      "dc.publisher": "East Sussex County Council",
+      "dcterms.spatial": "East Sussex, UK",
+      "dc.language": "eng",
+      "dc.description": "Details of recycling point at Highlands Inn, Ridgewood, Uckfield.",
+      "og:description": "Details of recycling point at Highlands Inn, Ridgewood, Uckfield.",
+      "twitter:description": "Details of recycling point at Highlands Inn, Ridgewood, Uckfield.",
+      "dc.subject": "Providing information",
+      "og:type": "article",
+      "dc.format": "text/html",
+      "egms.copyright": "https://www.eastsussex.gov.uk/about-this-site/copyright/",
+      "msapplication-tileimage": "https://www.eastsussex.gov.uk/windows-tile.png",
+      "msapplication-tilecolor": "#ffffff",
+      "og:image": "https://www.eastsussex.gov.uk/img/logo-for-facebook.png",
+      "og:site_name": "East Sussex County Council",
+      "fb:app_id": "169406409819518",
+      "twitter:card": "summary",
+      "twitter:site": "@eastsussexcc"
+     }
+    ],
+    "cse_image": [
+     {
+      "src": "https://www.eastsussex.gov.uk/img/logo-for-facebook.png"
+     }
+    ]
+   }
+  },
+  {
+   "kind": "customsearch#result",
+   "title": "Recycling point, Wyevale Garden Centre, A22, Lower Dicker – East ...",
+   "htmlTitle": "Recycling point, Wyevale Garden Centre, A22, Lower Dicker – East ...",
+   "link": "https://www.eastsussex.gov.uk/environment/rubbishandrecycling/recyclingsites/wyevalegardencentre",
+   "displayLink": "www.eastsussex.gov.uk",
+   "snippet": "Further information. CDs, DVDs, Videos, Audio Tapes, Vinyl records (including \ntheir cases/sleeves) are accepted in the book bank.",
+   "htmlSnippet": "Further information. CDs, DVDs, \u003cb\u003eVideos\u003c/b\u003e, Audio Tapes, Vinyl records (including \u003cbr\u003e\ntheir cases/sleeves) are accepted in the book bank.",
+   "cacheId": "vNsx8RrP0f4J",
+   "formattedUrl": "https://www.eastsussex.gov.uk/environment/.../wyevalegardencentre",
+   "htmlFormattedUrl": "https://www.eastsussex.gov.uk/environment/.../wyevalegardencentre",
+   "pagemap": {
+    "cse_thumbnail": [
+     {
+      "width": "225",
+      "height": "225",
+      "src": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTamuKF29shsi2Ox-MCAJs84d2n-z-u2m9Qnvsa-cp_mBMeMh5xEGluwow"
+     }
+    ],
+    "metatags": [
+     {
+      "viewport": "width=device-width, initial-scale=1.0",
+      "dc.title": "Recycling point, Wyevale Garden Centre, A22, Lower Dicker – East Sussex County Council",
+      "og:title": "Recycling point, Wyevale Garden Centre, A22, Lower Dicker – East Sussex County Council",
+      "twitter:title": "Recycling point, Wyevale Garden Centre, A22, Lower Dicker – East Sussex County Council",
+      "dc.creator": "Web Team, East Sussex County Council, County Hall, Lewes, BN7 1UE. https://www.eastsussex.gov.uk/contact-us/",
+      "dcterms.created": "2015-05-29",
+      "dcterms.modified": "2017-10-16",
+      "egms.systemid": "5657",
+      "og:url": "https://www.eastsussex.gov.uk/environment/rubbishandrecycling/recyclingsites/wyevalegardencentre/",
+      "dc.publisher": "East Sussex County Council",
+      "dcterms.spatial": "East Sussex, UK",
+      "dc.language": "eng",
+      "dc.description": "Details for the Recycling point at Wyevale Garden Centre, A22, Lower Dicker.",
+      "og:description": "Details for the Recycling point at Wyevale Garden Centre, A22, Lower Dicker.",
+      "twitter:description": "Details for the Recycling point at Wyevale Garden Centre, A22, Lower Dicker.",
+      "dc.subject": "Providing information",
+      "og:type": "article",
+      "dc.format": "text/html",
+      "egms.copyright": "https://www.eastsussex.gov.uk/about-this-site/copyright/",
+      "msapplication-tileimage": "https://www.eastsussex.gov.uk/windows-tile.png",
+      "msapplication-tilecolor": "#ffffff",
+      "og:image": "https://www.eastsussex.gov.uk/img/logo-for-facebook.png",
+      "og:site_name": "East Sussex County Council",
+      "fb:app_id": "169406409819518",
+      "twitter:card": "summary",
+      "twitter:site": "@eastsussexcc"
+     }
+    ],
+    "cse_image": [
+     {
+      "src": "https://www.eastsussex.gov.uk/img/logo-for-facebook.png"
+     }
+    ]
+   }
+  },
+  {
+   "kind": "customsearch#result",
+   "title": "Recycling point, Tesco car park, Bell Lane, Uckfield – East Sussex ...",
+   "htmlTitle": "Recycling point, Tesco car park, Bell Lane, Uckfield – East Sussex ...",
+   "link": "https://www.eastsussex.gov.uk/environment/rubbishandrecycling/recyclingsites/tescouckfield",
+   "displayLink": "www.eastsussex.gov.uk",
+   "snippet": "Further information. CDs, DVDs, Videos, Audio Tapes, Vinyl records (including \ntheir cases/sleeves) are accepted in the book bank.",
+   "htmlSnippet": "Further information. CDs, DVDs, \u003cb\u003eVideos\u003c/b\u003e, Audio Tapes, Vinyl records (including \u003cbr\u003e\ntheir cases/sleeves) are accepted in the book bank.",
+   "cacheId": "fv4aTaFtaL0J",
+   "formattedUrl": "https://www.eastsussex.gov.uk/environment/.../tescouckfield",
+   "htmlFormattedUrl": "https://www.eastsussex.gov.uk/environment/.../tescouckfield",
+   "pagemap": {
+    "cse_thumbnail": [
+     {
+      "width": "225",
+      "height": "225",
+      "src": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTamuKF29shsi2Ox-MCAJs84d2n-z-u2m9Qnvsa-cp_mBMeMh5xEGluwow"
+     }
+    ],
+    "metatags": [
+     {
+      "viewport": "width=device-width, initial-scale=1.0",
+      "dc.title": "Recycling point, Tesco car park, Bell Lane, Uckfield – East Sussex County Council",
+      "og:title": "Recycling point, Tesco car park, Bell Lane, Uckfield – East Sussex County Council",
+      "twitter:title": "Recycling point, Tesco car park, Bell Lane, Uckfield – East Sussex County Council",
+      "dc.creator": "Web Team, East Sussex County Council, County Hall, Lewes, BN7 1UE. https://www.eastsussex.gov.uk/contact-us/",
+      "dcterms.created": "2015-05-22",
+      "dcterms.modified": "2017-10-23",
+      "egms.systemid": "5521",
+      "og:url": "https://www.eastsussex.gov.uk/environment/rubbishandrecycling/recyclingsites/tescouckfield/",
+      "dc.publisher": "East Sussex County Council",
+      "dcterms.spatial": "East Sussex, UK",
+      "dc.language": "eng",
+      "dc.description": "Details of recycling point at Tesco car park, Bell Lane, Uckfield.",
+      "og:description": "Details of recycling point at Tesco car park, Bell Lane, Uckfield.",
+      "twitter:description": "Details of recycling point at Tesco car park, Bell Lane, Uckfield.",
+      "dc.subject": "Providing information",
+      "og:type": "article",
+      "dc.format": "text/html",
+      "egms.copyright": "https://www.eastsussex.gov.uk/about-this-site/copyright/",
+      "msapplication-tileimage": "https://www.eastsussex.gov.uk/windows-tile.png",
+      "msapplication-tilecolor": "#ffffff",
+      "og:image": "https://www.eastsussex.gov.uk/img/logo-for-facebook.png",
+      "og:site_name": "East Sussex County Council",
+      "fb:app_id": "169406409819518",
+      "twitter:card": "summary",
+      "twitter:site": "@eastsussexcc"
+     }
+    ],
+    "cse_image": [
+     {
+      "src": "https://www.eastsussex.gov.uk/img/logo-for-facebook.png"
+     }
+    ]
+   }
+  },
+  {
+   "kind": "customsearch#result",
+   "title": "Online training – NHS Health Check resources – East Sussex ...",
+   "htmlTitle": "Online training – NHS Health Check resources – East Sussex ...",
+   "link": "https://www.eastsussex.gov.uk/socialcare/providers/health/health-checks-gp/training-online/",
+   "displayLink": "www.eastsussex.gov.uk",
+   "snippet": "It incorporates video demonstrations of motivational consultations, case studies, \nreflective exercises, top tips and advice for clients and other engaging ...",
+   "htmlSnippet": "It incorporates \u003cb\u003evideo\u003c/b\u003e demonstrations of motivational consultations, case studies, \u003cbr\u003e\nreflective exercises, top tips and advice for clients and other engaging&amp;nbsp;...",
+   "cacheId": "oYzuQp5tRrAJ",
+   "formattedUrl": "https://www.eastsussex.gov.uk/socialcare/.../health/.../training-online/",
+   "htmlFormattedUrl": "https://www.eastsussex.gov.uk/socialcare/.../health/.../training-online/",
+   "pagemap": {
+    "cse_thumbnail": [
+     {
+      "width": "225",
+      "height": "225",
+      "src": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTamuKF29shsi2Ox-MCAJs84d2n-z-u2m9Qnvsa-cp_mBMeMh5xEGluwow"
+     }
+    ],
+    "metatags": [
+     {
+      "viewport": "width=device-width, initial-scale=1.0",
+      "dc.title": "Online training – NHS Health Check resources – East Sussex County Council",
+      "og:title": "Online training – NHS Health Check resources – East Sussex County Council",
+      "twitter:title": "Online training – NHS Health Check resources – East Sussex County Council",
+      "dc.creator": "Web Team, East Sussex County Council, County Hall, Lewes, BN7 1UE. https://www.eastsussex.gov.uk/contact-us/",
+      "dcterms.created": "2015-12-04",
+      "dcterms.modified": "2017-06-29",
+      "egms.systemid": "14048",
+      "og:url": "https://www.eastsussex.gov.uk/socialcare/providers/health/health-checks-gp/training-online/",
+      "dc.publisher": "East Sussex County Council",
+      "dcterms.spatial": "East Sussex, UK",
+      "dc.language": "eng",
+      "dc.description": "Add description here",
+      "og:description": "Add description here",
+      "twitter:description": "Add description here",
+      "dc.subject": "Providing information",
+      "og:type": "article",
+      "dc.format": "text/html",
+      "egms.disposalreview": "2017-11-20",
+      "dcterms.ispartof": "https://www.eastsussex.gov.uk/socialcare/providers/health/health-checks-gp/",
+      "egms.copyright": "https://www.eastsussex.gov.uk/about-this-site/copyright/",
+      "msapplication-tileimage": "https://www.eastsussex.gov.uk/windows-tile.png",
+      "msapplication-tilecolor": "#ffffff",
+      "og:image": "https://www.eastsussex.gov.uk/img/logo-for-facebook.png",
+      "og:site_name": "East Sussex County Council",
+      "fb:app_id": "169406409819518",
+      "twitter:card": "summary",
+      "twitter:site": "@eastsussexcc"
+     }
+    ],
+    "cse_image": [
+     {
+      "src": "https://www.eastsussex.gov.uk/img/logo-for-facebook.png"
+     }
+    ]
+   }
+  }
+ ]
+}</value>
+  </data>
+  <data name="ExampleResponseSelectedFields" xml:space="preserve">
+    <value>{
+ "queries": {
+  "nextPage": [
+   {
+    "title": "Google Custom Search - videos",
+    "totalResults": "194",
+    "searchTerms": "videos",
+    "count": 10,
+    "startIndex": 11,
+    "inputEncoding": "utf8",
+    "outputEncoding": "utf8",
+    "safe": "off",
+    "cx": "013802616358587036066:ehvcftnmyfs"
+   }
+  ]
+ },
+ "searchInformation": {
+  "searchTime": 0.41761,
+  "formattedSearchTime": "0.42",
+  "totalResults": "194",
+  "formattedTotalResults": "194"
+ },
+ "items": [
+  {
+   "title": "Videos of council meetings – East Sussex County Council",
+   "link": "https://www.eastsussex.gov.uk/yourcouncil/webcasts/",
+   "htmlSnippet": "\u003cb\u003eVideos\u003c/b\u003e of council meetings. Webcasts of meetings are available online for six \u003cbr\u003e\nmonths after the date of the meeting. They include index points that allow you to&amp;nbsp;...",
+   "htmlFormattedUrl": "https://www.eastsussex.gov.uk/yourcouncil/webcasts/"
+  },
+  {
+   "title": "Recycling point, Cooperative car park, High Street, Heathfield – East ...",
+   "link": "https://www.eastsussex.gov.uk/environment/rubbishandrecycling/recyclingsites/coopheathfield",
+   "htmlSnippet": "Further information. CDs, DVDs, \u003cb\u003eVideos\u003c/b\u003e, PC &amp;amp; \u003cb\u003eVideo\u003c/b\u003e games (including their \u003cbr\u003e\ncases/sleeves) are accepted in the book bank.",
+   "htmlFormattedUrl": "https://www.eastsussex.gov.uk/environment/.../coopheathfield"
+  },
+  {
+   "title": "The Big Gig – There's more to me than LD! – East Sussex County ...",
+   "link": "https://www.eastsussex.gov.uk/socialcare/disability/learning-disability/learning-disability-partnership-board/involvement-matters-team/theres-more-to-me-than-ld/",
+   "htmlSnippet": "Members of the Involvement Matters Team (IMT) tell you who they are in these \u003cbr\u003e\n\u003cb\u003evideos\u003c/b\u003e. They do not want to be defined by their learning disability. The aim of the\u003cbr\u003e\n&amp;nbsp;...",
+   "htmlFormattedUrl": "https://www.eastsussex.gov.uk/.../theres-more-to-me-than-ld/"
+  },
+  {
+   "title": "Recycling point, Croft Road car park, Crowborough – East Sussex ...",
+   "link": "https://www.eastsussex.gov.uk/environment/rubbishandrecycling/recyclingsites/croftroadcarpark/",
+   "htmlSnippet": "CDs, DVDs, \u003cb\u003eVideos\u003c/b\u003e, PC &amp;amp; \u003cb\u003eVideo\u003c/b\u003e games (including their cases/sleeves) are \u003cbr\u003e\naccepted in the book bank. The electrical bank accepts small items such as irons,\u003cbr\u003e\n&amp;nbsp;...",
+   "htmlFormattedUrl": "https://www.eastsussex.gov.uk/environment/.../croftroadcarpark/"
+  },
+  {
+   "title": "East Sussex Better Together",
+   "link": "https://news.eastsussex.gov.uk/east-sussex-better-together/",
+   "htmlSnippet": "We&amp;#39;ve made some short \u003cb\u003evideos\u003c/b\u003e explaining more about the ESBT Alliance (\u003cbr\u003e\naccountable care in East Sussex) – click on the links below to find out about our&amp;nbsp;...",
+   "htmlFormattedUrl": "https://news.eastsussex.gov.uk/east-sussex-better-together/"
+  },
+  {
+   "title": "Recycling point, Highlands Inn, Ridgewood, Uckfield – East Sussex ...",
+   "link": "https://www.eastsussex.gov.uk/environment/rubbishandrecycling/recyclingsites/highlandsinnuckfield",
+   "htmlSnippet": "Further information. CDs, DVDs, \u003cb\u003eVideos\u003c/b\u003e, Audio Tapes, Vinyl records (including \u003cbr\u003e\ntheir cases/sleeves) are accepted in the book bank.",
+   "htmlFormattedUrl": "https://www.eastsussex.gov.uk/environment/.../highlandsinnuckfield"
+  },
+  {
+   "title": "Recycling point, Wyevale Garden Centre, A22, Lower Dicker – East ...",
+   "link": "https://www.eastsussex.gov.uk/environment/rubbishandrecycling/recyclingsites/wyevalegardencentre",
+   "htmlSnippet": "Further information. CDs, DVDs, \u003cb\u003eVideos\u003c/b\u003e, Audio Tapes, Vinyl records (including \u003cbr\u003e\ntheir cases/sleeves) are accepted in the book bank.",
+   "htmlFormattedUrl": "https://www.eastsussex.gov.uk/environment/.../wyevalegardencentre"
+  },
+  {
+   "title": "Recycling point, Tesco car park, Bell Lane, Uckfield – East Sussex ...",
+   "link": "https://www.eastsussex.gov.uk/environment/rubbishandrecycling/recyclingsites/tescouckfield",
+   "htmlSnippet": "Further information. CDs, DVDs, \u003cb\u003eVideos\u003c/b\u003e, Audio Tapes, Vinyl records (including \u003cbr\u003e\ntheir cases/sleeves) are accepted in the book bank.",
+   "htmlFormattedUrl": "https://www.eastsussex.gov.uk/environment/.../tescouckfield"
+  },
+  {
+   "title": "Online training – NHS Health Check resources – East Sussex ...",
+   "link": "https://www.eastsussex.gov.uk/socialcare/providers/health/health-checks-gp/training-online/",
+   "htmlSnippet": "It incorporates \u003cb\u003evideo\u003c/b\u003e demonstrations of motivational consultations, case studies, \u003cbr\u003e\nreflective exercises, top tips and advice for clients and other engaging&amp;nbsp;...",
+   "htmlFormattedUrl": "https://www.eastsussex.gov.uk/socialcare/.../health/.../training-online/"
+  },
+  {
+   "title": "Lewes Register Office – East Sussex County Council",
+   "link": "https://www.eastsussex.gov.uk/community/registration/offices/lewes/",
+   "htmlSnippet": "Contact details, opening hours and directions to Lewes Register Office.",
+   "htmlFormattedUrl": "https://www.eastsussex.gov.uk/community/registration/offices/lewes/"
+  }
+ ]
+}</value>
+  </data>
+  <data name="SpellingSuggestion" xml:space="preserve">
+    <value>{
+ "searchInformation": {
+  "searchTime": 0.510932,
+  "formattedSearchTime": "0.51",
+  "totalResults": "0",
+  "formattedTotalResults": "0"
+ },
+ "spelling": {
+  "correctedQuery": "education"
+ }
+}</value>
+  </data>
+</root>

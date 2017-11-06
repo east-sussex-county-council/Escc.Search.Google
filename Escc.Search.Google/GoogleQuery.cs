@@ -1,4 +1,6 @@
 ﻿
+using System.Runtime.InteropServices;
+
 namespace Escc.Search.Google
 {
     /// <summary>
@@ -6,6 +8,8 @@ namespace Escc.Search.Google
     /// </summary>
     public class GoogleQuery : ISearchQuery
     {
+        private int _pageSize;
+
         /// <summary>
         /// Initializes a new instance of the <see cref="GoogleQuery"/> class.
         /// </summary>
@@ -13,7 +17,7 @@ namespace Escc.Search.Google
         public GoogleQuery(string queryText)
         {
             this.QueryTerms = queryText;
-            this.PageSize = 20; // optimal value-for-money for Google because it's the maximum number you can ask for in one request
+            this.PageSize = 10; // optimal value-for-money for Google because it's the maximum number you can ask for in one request
             this.Page = 1;
         }
 
@@ -30,10 +34,10 @@ namespace Escc.Search.Google
         public string QueryWithinResultsTerms { get; set; }
 
         /// <summary>
-        /// Gets or sets how many results are on each page.
+        /// Gets or sets how many results are on each page (up to a maximum of 10).
         /// </summary>
         /// <value>The size of the page.</value>
-        public int PageSize { get; set; }
+        public int PageSize { get { return _pageSize; } set { _pageSize = (value > 10 ? 10 : value); } }
 
         /// <summary>
         /// Gets or sets the page of results to fetch.
