@@ -3,8 +3,6 @@ Escc.Search.Google
 
 Google Custom Search provider for a search results page which uses interfaces from the Escc.Search namespace. 
 
-The NuGet package is built using the [NuBuild](https://github.com/bspell1/NuBuild) extension for Visual Studio.
-
 Example code:
 
 ```c#
