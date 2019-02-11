@@ -1,6 +1,8 @@
 ﻿
 using System;
 using System.Net;
+using System.Net.Http;
+using System.Threading.Tasks;
 using System.Web;
 using Escc.Net;
 
@@ -12,6 +14,7 @@ namespace Escc.Search.Google
     public class GoogleCustomSearch : ISearchService, ICacheableService
     {
         private readonly IProxyProvider _proxyProvider;
+        private static HttpClient _httpClient;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="GoogleCustomSearch" /> class.
@@ -42,7 +45,7 @@ namespace Escc.Search.Google
         /// </summary>
         /// <param name="query">The query.</param>
         /// <returns></returns>
-        public ISearchResponse Search(ISearchQuery query)
+        public async Task<ISearchResponse> SearchAsync(ISearchQuery query)
         {
             if (query == null) throw new ArgumentNullException(nameof(query));
 
@@ -67,8 +70,14 @@ namespace Escc.Search.Google
                 "&fields=queries(nextPage,previousPage),searchInformation,spelling(correctedQuery),items(title,link,htmlSnippet,htmlFormattedUrl)&hl=en";
 
             // Make a fresh request to Google for search results. 
-            var client = new HttpRequestClient(_proxyProvider);
-            var response = new GoogleResponse(client.RequestString(new Uri(url)));
+            if (_httpClient == null)
+            {
+                _httpClient = new HttpClient(new HttpClientHandler()
+                {
+                    Proxy = _proxyProvider?.CreateProxy()
+                });
+            }
+            var response = new GoogleResponse(await _httpClient.GetStringAsync(url).ConfigureAwait(false));
 
             // Cache the response if possible before returning it
             this.CacheStrategy?.CacheResponse(query, response);

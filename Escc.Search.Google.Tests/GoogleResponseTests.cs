@@ -1,14 +1,13 @@
 ﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 using NUnit.Framework;
 using Assert = NUnit.Framework.Assert;
 
 namespace Escc.Search.Google.Tests
 {
-    [TestClass]
+    [TestFixture]
     public class GoogleResponseTests
     {
-        [TestMethod]
+        [Test]
         public void TotalResultsIsParsed()
         {
             var response = new GoogleResponse(SampleResponses.ExampleResponseSelectedFields);
@@ -18,7 +17,7 @@ namespace Escc.Search.Google.Tests
             Assert.AreEqual(194, totalResults);
         }
 
-        [TestMethod]
+        [Test]
         public void FirstResultIsParsed()
         {
             var response = new GoogleResponse(SampleResponses.ExampleResponseSelectedFields);
@@ -30,7 +29,7 @@ namespace Escc.Search.Google.Tests
             Assert.AreEqual("<b>Videos</b> of council meetings. Webcasts of meetings are available online for six months after the date of the meeting. They include index points that allow you to&nbsp;...", results[0].Excerpt);
         }
 
-        [TestMethod]
+        [Test]
         public void SpellingSuggestionIsParsed()
         {
             var response = new GoogleResponse(SampleResponses.SpellingSuggestion);

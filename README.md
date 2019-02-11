@@ -12,7 +12,7 @@ var query = new GoogleQuery(Request.QueryString["q"]);
 query.PageSize = 20;
 query.Page = 1;
 
-var response = service.Search(query);
+var response = await service.SearchAsync(query);
 var searchResults = response.Results();
 this.results.DataSource = searchResults;
 this.results.DataBind();
